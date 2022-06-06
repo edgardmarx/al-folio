@@ -12,7 +12,7 @@
   DINOBBIO
 
 
-  | partners
+  | dataset
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -103,25 +103,23 @@
               </a>
           </li-->
 
-          
-
           <li class="nav-item ">
               <a class="nav-link" href="../ontology/index.html">
                 ontology
               </a>
           </li>
 
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="../dataset/index.html">
               dataset
+              <span class="sr-only">(current)</span>
             </a>
-          </li>
+        </li>
           
           
-          <li class="nav-item active">
+          <li class="nav-item">
               <a class="nav-link" href="../partners/index.html">
                 partners
-                <span class="sr-only">(current)</span>
               </a>
           </li>
 
@@ -144,122 +142,59 @@
     <div class="container mt-5">
       <div class="post">
 
-  <header class="post-header">
-     <h1 class="post-title">Partners</h1>
-     <p class="desc">DINOBBIO is possible thanks to different organizations.</p>
-  </header>
+          <header class="post-header">
+            <h1 class="post-title">dataset</h1>
+            <p class="post-description">Download or query the project dataset</p>
+          </header>
+        
+          <article>
 
-  <article>
 
-    <div class="projects">
-      <h2 class="category">Research</h2>
 
-      <div class="grid">
-              
-        <div class="grid-item">
-
-          <a href="http://usp.br" target="_blank" rel="noopener noreferrer">
-
-            <div class="card hoverable" style="min-height: 100px; align-content: center; display: grid;">
-
-              <picture style="text-align: center;">
-                <img style="max-width: 150px;max-height: 150px;" src="https://www.combatblindness.org/wp-content/uploads/2017/02/university-of-sao-paulo-logo.jpg" alt="USP">
-              </picture>
-
-            </div>
-          </a>
-        </div>
-
-        <div class="grid-item">
-
-          <a href="http://unesp.br" target="_blank" rel="noopener noreferrer">
-
-            <div class="card hoverable" style="min-height: 100px; align-content: center; display: grid;">
-
-            <picture style="text-align: center;">
-              <img style="max-width: 150px;max-height: 150px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Logo_Unesp.svg/1200px-Logo_Unesp.svg.png" alt="UNESP">
-            </picture>
+            <p>Lifting a Web Client with the NuBBE RDF dataset and ontology.</p>
+            </p>
+            <h4>Linux & Mac</h4>
+            </p>
+            <h5>1) Python</h5>
+            <p>Execute:</p>
+            <code>
+              pip install kbox # install kbox latest version
+              kbox -server -kb "http://nubbe.db,http://nubbe.db/ontology" -install
+            </code>
+            </p>
+            <p>Default Web Client: http://localhost:8080</p>
             
-          </div>
-          </a>
-        </div>
-
-        <div class="grid-item">
-
-          <a href="http://htwk-leipzig.de" target="_blank" rel="noopener noreferrer">
-
-            <div class="card hoverable" style="min-height: 100px; align-content: center; display: grid;">
-
-            <picture style="text-align: center;">
-              <img style="max-width: 150px;max-height: 150px;" src="https://upload.wikimedia.org/wikipedia/de/thumb/1/16/HTWK-Logo.svg/1200px-HTWK-Logo.svg.png" alt="HTWK">
-            </picture>
-
-
-                
-            </div>
-          </a>
-        </div>
-      
-      </div>
-
-      <h2 class="category">Funding</h2>
-
-      <div class="grid">
-              
-        <div class="grid-item">
-
-          <a href="http://dfg.de" target="_blank" rel="noopener noreferrer">
-
-            <div class="card hoverable" style="min-height: 100px; align-content: center; display: grid;">
-
-            <picture style="text-align: center;">
-              <img style="max-width: 150px;max-height: 150px;" src="https://www.tu-chemnitz.de/mathematik/part_dgl/projects/images/DFG_text_blue_458x202.jpg" alt="DFG">
-            </picture>
-
-            </div>
-          </a>
-        </div>
-
-        <div class="grid-item">
-
-          <a href="http://fapesp.br" target="_blank" rel="noopener noreferrer">
-
-            <div class="card hoverable" style="min-height: 100px; align-content: center; display: grid;">
-
-            <picture style="text-align: center;">
-              <img style="max-width: 150px;max-height: 150px;" src="https://icahdotorg.files.wordpress.com/2019/02/fapesp-1.jpg" alt="FAPESP">
-            </picture>
+            </p>
+            <h4>Windows, Linux & Mac</h4>
             
-          </div>
-          </a>
+            <h5>2) Jar</h5>
+            
+            <p>Download KBox jar file here: https://github.com/AKSW/KBox/releases/download/v0.0.2-alpha/kbox-v0.0.2-alpha.jar</p>
+            
+            <p>Execute:</p>
+            <code>
+            java -jar kbox-v.0.0.2-alpha -server -kb "http://nubbe.db,http://nubbe.db/ontology" -install
+            </code>
+            </p>
+            <p>Default Web Client: http://localhost:8080</p>
+            
+            
+            <h5>3) Docker</h5>
+            <p>Execute:</p>
+            <code>
+              docker pull aksw/kbox # install kbox latest version
+              docker aksw/kbox -server -kb "http://nubbe.db,http://nubbe.db/ontology" -install
+            </code>
+            </p>
+            <p>Default Web Client: http://localhost:8080</p>
+            
+            
+            <p>For more information and commands, please visit the KBox project web-page: https://github.com/AKSW/KBox</p>
+            
+        
+          </article>
+        
         </div>
-
-      </div>
-
-      <h2 class="category">Sponsors</h2>
-
-      <div class="grid">
-              
-        <div class="grid-item">
-
-          <a href="http://eccenca.com" target="_blank" rel="noopener noreferrer">
-
-            <div class="card hoverable" style="min-height: 100px; align-content: center; display: grid;">
-
-            <picture style="text-align: center;">
-              <img style="max-width: 150px;max-height: 150px;" src="https://eccenca.com/layouts/default/images/logo_eccenca.svg" alt="eccenca">
-            </picture>
-
-            </div>
-          </a>
-        </div>
-
-      </div>
-
-
-  </div>
-    
-  </article>
 
 </div>
 
@@ -270,7 +205,7 @@
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    © Copyright 2021 DINOBBIO
+    © Copyright 2022 DINOBBIO
   </div>
 </footer>
 
